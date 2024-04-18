@@ -21,6 +21,11 @@ option = st.selectbox(
 
 st.write('You selected:', option)
 
+if option is None:
+        df_cars = df_cars
+else:
+        df_cars = df_cars[df_cars['continent'].str.contains(option, na=False)]
+
 st.write('Number of models : ', len(df_cars['year']))
 
 option_1 = st.selectbox(
@@ -29,11 +34,6 @@ option_1 = st.selectbox(
     )
 
 st.write('You selected:', option_1)
-
-if option is None:
-        df_cars = df_cars
-else:
-        df_cars = df_cars[df_cars['continent'].str.contains(option, na=False)]
 
 # 4 graphiques pour monter l'evolution des pussances, du poids et consomation au court des années
 
