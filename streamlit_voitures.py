@@ -21,6 +21,8 @@ option = st.selectbox(
 
 st.write('You selected:', option)
 
+st.write('Number of models : ', len(df_cars['year']))
+
 option_1 = st.selectbox(
     'Selected measurement units',
     options = ('US measure','Metric measure')
@@ -34,7 +36,6 @@ else:
         df_cars = df_cars[df_cars['continent'].str.contains(option, na=False)]
 
 # 4 graphiques pour monter l'evolution des pussances, du poids et consomation au court des années
-st.write('Number of models : ', len(df_cars['year']))
 
 if option_1 is 'US measure':
 
