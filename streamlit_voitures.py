@@ -50,8 +50,8 @@ if option_1 is 'US measure':
         
         ax = sns.regplot(y='cylinders', 
                          x= 'weightlbs', 
-                         data = df_cars)
-
+                         data = df_cars,
+                        ax = axes[0,0])
         ax.set_title("Cylinders vs weightlbs ")
 
 
