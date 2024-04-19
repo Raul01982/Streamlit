@@ -4,7 +4,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 import plotly.express as px
-import plotly.graph_objects as go
 
 link = "https://www.insee.fr/fr/statistiques/2011101?geo=DEP-23#chiffre-cle-1"
 link_1 = "https://www.insee.fr/fr/statistiques/2407676#graphique-figure1_radio1"
