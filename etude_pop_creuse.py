@@ -112,13 +112,13 @@ fusion_cinema_CSP_CCCSO['cinemas_total'] = fusion_cinema_CSP_CCCSO['CCCSO_1_à_3
 
 st.write("Sur les 13500 hab. de la communauté de communes en se basant sur les chiffres de l'INSEE on peut estimer que environ 3600 vont au cinemas de 1 à 3 fois par an et 1800 plus de 3 fois soit 5400 personnes")
 
-df = fusion_cinema_CSP_CCCSO.drop([0],axis=0)
+# df = fusion_cinema_CSP_CCCSO.drop([0],axis=0)
 
-fig = px.pie(df, values='cinemas_total', names='CSP_pop_creuse',title='Répartition de la population qui va au cinemas', color='CSP_pop_creuse')
+# fig = px.pie(df, values='cinemas_total', names='CSP_pop_creuse',title='Répartition de la population qui va au cinemas', color='CSP_pop_creuse')
 
-st.plotly_chart(fig, use_container_width=True)
+# st.plotly_chart(fig, use_container_width=True)
 
-fig_1 = px.bar(df, y=['CCCSO_1_à_3_fois','CCCSO_Plus_de_3_fois'], x='CSP_pop_creuse')
+# fig_1 = px.bar(df, y=['CCCSO_1_à_3_fois','CCCSO_Plus_de_3_fois'], x='CSP_pop_creuse')
 
 st.plotly_chart(fig_1, use_container_width=True)
 
