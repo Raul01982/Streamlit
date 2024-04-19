@@ -120,6 +120,6 @@ st.write("Sur les 13500 hab. de la communauté de communes en se basant sur les 
 
 # fig_1 = px.bar(df, y=['CCCSO_1_à_3_fois','CCCSO_Plus_de_3_fois'], x='CSP_pop_creuse')
 
-st.plotly_chart(fig_1, use_container_width=True)
+# st.plotly_chart(fig_1, use_container_width=True)
 
 
