@@ -35,21 +35,25 @@ option_1 = st.selectbox(
 
 st.write('You selected:', option_1)
 
+if option is None:
+        df_cars = df_cars
+else:
+        df_cars = df_cars[df_cars['continent'].str.contains(option, na=False)]
+
 # 4 graphiques pour monter l'evolution des pussances, du poids et consomation au court des années
+
 
 if option_1 is 'US measure':
 
         fig, axes = plt.subplots(2, 2 ,figsize = (20,20))
         fig.suptitle("Evolution of cars over the years", size = 16)
+        
+        ax = sns.regplot(y='cylinders', 
+                         x= 'weightlbs', 
+                         data = df_cars)
 
-        ax = sns.lineplot(data = df_cars,
-                        x = "year",
-                        y = "cylinders",
-                        color= 'blue',
-                        ax = axes[0,0])
-        ax.set_title("Evolution of cylinders ")
-        plt.ylabel("cylinders")
-        plt.xlabel("year")
+        ax.set_title("Cylinders vs weightlbs ")
+
 
         ax = sns.scatterplot(data = df_cars,
                         x='year',
