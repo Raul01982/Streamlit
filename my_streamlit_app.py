@@ -4,7 +4,7 @@ import seaborn as sns
 
 st.set_page_config(
     page_title="Hello",
-    page_icon="👋",
+    page_icon="👋✌️😁",
 )
 
 st.title('Hello Wilders, welcome to my application!')
